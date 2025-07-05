@@ -1,8 +1,8 @@
 def manhattan(state, goal):
     dist = 0
-    for i in range(1, 9):  # Ignore 0 (blank tile)
-        x1, y1 = divmod(state.index(i), 3)  # Current position of tile i
-        x2, y2 = divmod(goal.index(i), 3)  # Goal position of tile i
+    for i in range(1, 9):  
+        x1, y1 = divmod(state.index(i), 3)  
+        x2, y2 = divmod(goal.index(i), 3) 
         dist += abs(x1 - x2) + abs(y1 - y2)
     return dist
 def main():
